@@ -1,0 +1,47 @@
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1rem minmax(auto, 600px) 1rem 1fr 1fr;
+}
+
+article > * {
+  grid-column: 4;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+blockquote {
+  grid-column: 3 / 5;
+  margin: 0;
+  padding-left: 10px;
+  border-left: 3px solid black;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.photo {
+  grid-column: 4;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.fullwidth-photo {
+  grid-column: 1 / -1;
+}
+
+.highlight {
+  background-color: greenyellow;
+}
+
+.highlight-marker {
+  grid-column: 5 / span 3;
+}
